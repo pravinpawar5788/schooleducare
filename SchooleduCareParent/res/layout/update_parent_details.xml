@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2980b9"
+    android:orientation="vertical" 
+    android:gravity="" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="50"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_weight="50"
+                android:text="Name:                                       "
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                
+               android:layout_weight="50"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="50"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:layout_marginLeft="5dp"
+                android:text="Relation with child:"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextrelation"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:paddingLeft="3dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" 
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50" 
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Mobile No:"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextmobile"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:paddingLeft="3dp"
+                android:layout_weight="50"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="50"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="30"
+                android:text="Photo"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnChoose"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/positive_buttons"
+                android:layout_weight="40"
+                android:textColor="#ffffff"
+                android:text="Choose File" />
+
+            <TextView
+                android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No file chosen"
+                android:layout_weight="30"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/positive_buttons"
+            android:textColor="#FFFFFF"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textBusno"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center_horizontal"
+            android:text="Bus No."
+             />
+
+        <TextView
+            android:id="@+id/textDrivername"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center_horizontal"
+            android:text="Driver Name"
+             />
+
+        <TextView
+            android:id="@+id/textAttendentname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center_horizontal"
+            android:text="Attendent Name"
+             />
+
+        <TextView
+            android:id="@+id/textRoutefrom"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center_horizontal"
+            android:text="Route From"
+             />
+
+        <TextView
+            android:id="@+id/textBoardingpoint"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center_horizontal"
+            android:text="Boarding Points"
+            />
+
+        <TextView
+            android:id="@+id/textPickTime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center_horizontal"
+            android:text="Pick Time"
+            />
+
+        <TextView
+            android:id="@+id/textDropTime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:gravity="center_horizontal"
+            android:text="Drop Time"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#34495E"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/educare_logo" />
+
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Username"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imageBackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on_home_click" />
+    </RelativeLayout>
+
+   
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EB974E"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/headerTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Latest"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C5EFF7"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#336E7B"
+                    android:gravity="center_vertical"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:id="@+id/textSubject"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="25"
+                        android:text="Subject"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textAnnouncement"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="50"
+                        android:text="Announcement"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textDate"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="25"
+                        android:text="Date"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/announcementlist1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EB974E"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/headerTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Archive"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:layout_weight="0.90"
+                android:background="#C5EFF7"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#336E7B"
+                    android:gravity="center_vertical"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:id="@+id/textSubject"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="25"
+                        android:text="Subject"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textAnnouncement"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="50"
+                        android:text="Announcement"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textDate"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="25"
+                        android:text="Date"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/announcementlist2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#34495E"
+        android:gravity="center" >
+    </LinearLayout>
+
+</LinearLayout>

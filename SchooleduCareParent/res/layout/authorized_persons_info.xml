@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#34495E"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/educare_logo" />
+
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Username"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imageBackbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on_home_click" />
+    </RelativeLayout>
+
+   
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.40"
+            android:background="#C5EFF7"
+            android:orientation="vertical" >
+            
+            <ListView
+            android:id="@+id/auth_person_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </ListView>
+
+            <!-- <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageParent"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_photo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageParent"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/imageParent"
+                    android:text="Relationship with chld:" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageParent"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:text="Mobile No:" />
+
+                <TextView
+                    android:id="@+id/textp_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageParent"
+                    android:layout_alignRight="@+id/imageParent"
+                    android:layout_below="@+id/imageParent"
+                    android:gravity="center"
+                    android:text="Name" />
+
+                <Button
+                    android:id="@+id/btnp_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/positive_buttons"
+                    android:text=" Edit " />
+
+                <TextView
+                    android:id="@+id/textp_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView3"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignLeft="@+id/textp_relation"
+                    android:text="TextView" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imagewife"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_photo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imagewife"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/imagewife"
+                    android:text="Relationship with chld:" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imagewife"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:text="Mobile No:" />
+
+                <TextView
+                    android:id="@+id/textw_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textw_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imagewife"
+                    android:layout_alignRight="@+id/imagewife"
+                    android:layout_below="@+id/imagewife"
+                    android:gravity="center"
+                    android:text="Name" />
+
+                <Button
+                    android:id="@+id/btnw_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/positive_buttons"
+                    android:text=" Edit " />
+
+                <TextView
+                    android:id="@+id/textw_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/textView3"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignLeft="@+id/textw_relation"
+                    android:text="TextView" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imagemaid"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_photo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imagemaid"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/imagemaid"
+                    android:text="Relationship with chld:" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imagemaid"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:text="Mobile No:" />
+
+                <TextView
+                    android:id="@+id/textm_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textm_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imagemaid"
+                    android:layout_alignRight="@+id/imagemaid"
+                    android:layout_below="@+id/imagemaid"
+                    android:gravity="center"
+                    android:text="Name" />
+
+                <Button
+                    android:id="@+id/btnm_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/positive_buttons"
+                    android:text=" Edit " />
+
+                <TextView
+                    android:id="@+id/textm_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView3"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignLeft="@+id/textm_relation"
+                    android:text="TextView" />
+
+            </RelativeLayout> -->
+        </LinearLayout>
+  
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#34495E"
+        android:gravity="center" >
+
+        
+
+    </LinearLayout>
+
+</LinearLayout>
